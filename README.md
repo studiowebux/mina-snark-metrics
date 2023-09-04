@@ -43,6 +43,15 @@ docker run \
     --name snark-metrics \
     -p 9999:9999 \
     -e PUBLIC_KEY="B62qpawLEW6N9v4PoZ4jVpPMbMnCN2Vd8qWEd1EFQSVt8wM7itfuzHw" \
-    -e ENDPOINT="http://localhost:3095/graphql" \
+    --add-host=host.docker.local:host-gateway \
+    -e ENDPOINT="http://host.docker.local:3095/graphql" \
     snark-metrics
+```
+
+```bash
+docker logs snark-metrics
+```
+
+```bash
+curl localhost:9999/metrics
 ```
