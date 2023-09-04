@@ -1,0 +1,20 @@
+{
+  "name": "@studiowebux/mina-snark-metrics",
+  "version": "1.0.0",
+  "description": "Provides Snark Metrics",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "mina-protocol",
+    "metrics",
+    "snark",
+    "prometheus"
+  ],
+  "author": "Studio Webux",
+  "license": "MIT",
+  "dependencies": {
+    "prom-client": "^14.2.0"
+  }
+}
