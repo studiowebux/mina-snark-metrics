@@ -18,4 +18,12 @@ module.exports = {
       snarkWorkFee
     }
   }`,
+
+  proversQuery: `query provers {
+    block(height: $blockHeight) {
+      snarkJobs {
+        prover
+      }
+    }
+  }`,
 };

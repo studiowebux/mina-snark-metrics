@@ -59,4 +59,24 @@ module.exports = (n_block) => [
     key: "n_block",
     help: "Number of blocks used to get the data",
   },
+  {
+    key: "non_zero_occurence_snark_fee",
+    help: "Non Zero Snark fee with highest occurence",
+  },
+  {
+    key: "occurence_snark_fee",
+    help: "Snark fee with highest occurence",
+  },
+  {
+    key: "diff_non_zero_occurence",
+    help: "Difference between current SNARK fee and the Non Zero Occurence, positive number means that the current fee is higher.",
+  },
+  {
+    key: "total_provers",
+    help: "Total number of provers",
+  },
+  {
+    key: "total_unique_provers",
+    help: "Total number of unique provers",
+  },
 ];
